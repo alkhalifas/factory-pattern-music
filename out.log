@@ -1,13 +1,13 @@
-INFO:root:-- Object Constructed2020-12-16 16:30:49,243 -- Song Conditional Object Constructed for songId: 123
-2020-12-16 16:30:49,243 -- Song Conditional Object Constructed for songId: 234
-2020-12-16 16:30:49,243 -- Song Conditional Object Constructed for songId: 345
-2020-12-16 16:30:49,243 -- JSON Conditional Object Serialized for songId: 123
-2020-12-16 16:30:49,243 -- JSON Conditional Object Serialized for songId: 234
-2020-12-16 16:30:49,243 -- XML Conditional Object Serialized for songId: 234
-2020-12-16 16:30:49,243 -- XML Conditional Object Serialized for songId: 345
-2020-12-16 16:30:49,243 -- Song Refactored Object Constructed for songId: 123
-2020-12-16 16:30:49,243 -- Song Refactored Object Constructed for songId: 234
-2020-12-16 16:30:49,243 -- Song Refactored Object Constructed for songId: 345
-2020-12-16 16:30:49,243 -- JSON Refactored Object Serialized for songId: 123
-2020-12-16 16:30:49,244 -- JSON Refactored Object Serialized for songId: 234
-2020-12-16 16:30:49,244 -- JSON Refactored Object Serialized for songId: 345
+INFO:root:-- Object Constructed2020-12-16 16:30:49,243 -- Song Conditional Object Constructed for songId: 1232020-12-16 16:41:07,113 -- Song Conditional Object Constructed for songId: 123
+2020-12-16 16:41:07,113 -- Song Conditional Object Constructed for songId: 234
+2020-12-16 16:41:07,113 -- Song Conditional Object Constructed for songId: 345
+2020-12-16 16:41:07,113 -- Conditional: Song Object Converted to JSON for songId: 123
+2020-12-16 16:41:07,114 -- Conditional: Song Object Converted to JSON for songId: 234
+2020-12-16 16:41:07,114 -- Conditional: Song Object Converted to XML for songId: 234
+2020-12-16 16:41:07,114 -- Conditional: Song Object Converted to XML for songId: 345
+2020-12-16 16:41:07,114 -- Factory: Song Object Constructed for songId: 123
+2020-12-16 16:41:07,114 -- Factory: Song Object Constructed for songId: 234
+2020-12-16 16:41:07,114 -- Factory: Song Object Constructed for songId: 345
+2020-12-16 16:41:07,114 -- Refactored: Song Object Converted to JSON for songId: 123
+2020-12-16 16:41:07,114 -- Refactored: Song Object Converted to XML for songId: 234
+2020-12-16 16:41:07,114 -- Refactored: Song Object Converted to JSON for songId: 345

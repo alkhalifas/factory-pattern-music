@@ -12,7 +12,7 @@ class Song:
         self.artist = artist
         self.genre = genre
         self.year = year
-        logging.info("-- Song Refactored Object Constructed for songId: {}".format(self.songId))
+        logging.info("-- Factory: Song Object Constructed for songId: {}".format(self.songId))
 
 class SongSerializer:
     
@@ -22,7 +22,7 @@ class SongSerializer:
         elif format == 'XML':
             return self._serialize_to_xml(song)
         else:
-            logging.info("-- Song Refactored Object Serialized for songId: {}".format(song.songId))
+            logging.info("-- Refactored: Song Object Serialized for songId: {}".format(self.songId))
             raise ValueError(format)
 
 
@@ -34,7 +34,7 @@ class SongSerializer:
                 "genre": song.genre,
                 "year": song.year
             }
-            logging.info("-- JSON Refactored Object Serialized for songId: {}".format(song.songId))
+            logging.info("-- Refactored: Song Object Converted to JSON for songId: {}".format(song.songId))
             return json.dumps(payload)
 
     def _serialize_to_xml(self, song):
@@ -52,5 +52,5 @@ class SongSerializer:
         year = et.SubElement(song_element, 'year')
         year.text = song.year
 
-        logging.info("-- XML Refactored Object Serialized for songId: {}".format(song.songId))
+        logging.info("-- Refactored: Song Object Converted to XML for songId: {}".format(song.songId))
         return et.tostring(song_element, encoding='unicode')

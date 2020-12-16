@@ -25,7 +25,7 @@ class SongSerializer:
                 "genre": song.genre,
                 "year": song.year
             }
-            logging.info("-- Conditional: Song Object Converted to JSON for songId: {}".format(self.songId))
+            logging.info("-- Conditional: Song Object Converted to JSON for songId: {}".format(song.songId))
             return json.dumps(song_info)
             
         elif format == "XML":
@@ -41,7 +41,7 @@ class SongSerializer:
             
             year = et.SubElement(song_info, "year")
             year.text = song.year
-            logging.info("-- Conditional: Song Object Converted to XML for songId: {}".format(self.songId))
+            logging.info("-- Conditional: Song Object Converted to XML for songId: {}".format(song.songId))
 
             return et.tostring(song_info, encoding="unicode")
         

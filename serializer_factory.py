@@ -12,12 +12,13 @@ class Song:
         self.artist = artist
         self.genre = genre
         self.year = year
-        logging.info("-- Song Factory Object Constructed for songId: {}".format(self.songId))
+        logging.info("-- Factory: Song Object Constructed for songId: {}".format(self.songId))
 
 class SongSerializer:
     
     def serialize(self, song, format):
         serializer = self._get_serializer(format)
+        logging.info("-- Factory: Song Object Serialized for songId: {}".format(self.songId))
         return serializer(song)
 
     def _get_serializer(self, format):
@@ -37,7 +38,7 @@ class SongSerializer:
                 "genre": song.genre,
                 "year": song.year
             }
-            logging.info("-- JSON Factory Object Serialized for songId: {}".format(song.songId))
+            logging.info("-- Factory: Song Object Converted to JSON for songId: {}".format(self.songId))
             return json.dumps(payload)
 
     def _serialize_to_xml(self, song):
@@ -55,4 +56,5 @@ class SongSerializer:
         year = et.SubElement(song_element, 'year')
         year.text = song.year
 
+        logging.info("-- Factory: Song Object Converted to XML for songId: {}".format(self.songId))
         return et.tostring(song_element, encoding='unicode')
