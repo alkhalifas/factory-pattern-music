@@ -22,6 +22,7 @@ class SongSerializer:
         elif format == 'XML':
             return self._serialize_to_xml(song)
         else:
+            logging.info("-- Song Refactored Object Serialized for songId: {}".format(song.songId))
             raise ValueError(format)
 
 
@@ -51,5 +52,5 @@ class SongSerializer:
         year = et.SubElement(song_element, 'year')
         year.text = song.year
 
-        logging.info("-- JSON Refactored Object Serialized for songId: {}".format(song.songId))
+        logging.info("-- XML Refactored Object Serialized for songId: {}".format(song.songId))
         return et.tostring(song_element, encoding='unicode')
